@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="marongboutique.boutiqueController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="149.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Marong's Boutique" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="dashboard1" layoutX="10.0" layoutY="57.0" mnemonicParsing="false" onAction="#dashboardPanel" prefHeight="47.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="addPro" layoutX="10.0" layoutY="57.0" mnemonicParsing="false" onAction="#addPanel" prefHeight="47.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Add " textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="receipt" layoutX="10.0" layoutY="151.0" mnemonicParsing="false" onAction="#receiptPanel" onMouseClicked="#receiptPanel" prefHeight="47.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Receipt" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buy" layoutX="10.0" layoutY="198.0" mnemonicParsing="false" onAction="#buyPanel" onMouseClicked="#buyPanel" prefHeight="47.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Buy" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="400.0" prefWidth="495.0" style="-fx-background-color: #142442;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="164.0" layoutY="28.0" prefHeight="31.0" prefWidth="131.0" text="DASHBOARD" textAlignment="CENTER" textFill="#fffbfb">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="64.0" layoutY="76.0" mnemonicParsing="false" onAction="#addPanel" prefHeight="95.0" prefWidth="344.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="ADD ITEMS TO INVENTORIES" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="dashboard3" layoutX="64.0" layoutY="200.0" mnemonicParsing="false" onAction="#buyPanel" prefHeight="95.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="START SHOPPING" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="dashboard21" layoutX="254.0" layoutY="200.0" mnemonicParsing="false" onAction="#receiptPanel" prefHeight="95.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="RECEIPTS" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

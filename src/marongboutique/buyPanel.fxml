@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="649.0" stylesheets="@grey_theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="marongboutique.BuyController">
+   <children>
+      <HBox layoutY="100.0" prefHeight="379.0" prefWidth="800.0">
+         <children>
+            <VBox prefHeight="309.0" prefWidth="213.0" spacing="10.0">
+               <children>
+                  <Label text="CAR RETAL SERVICE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="bmwCarCheckBox" mnemonicParsing="false" text="BMW" />
+                  <CheckBox fx:id="rangeRoverCheckBox" mnemonicParsing="false" text="RANGE ROVER" />
+                  <CheckBox fx:id="landRoverCheckBox" mnemonicParsing="false" text="LAND ROVER" />
+                  <Button mnemonicParsing="false" onAction="#OrderButtonPushed" text="Order Car On retal" />
+                  <Label fx:id="OrderLabel" alignment="TOP_LEFT" prefHeight="258.0" prefWidth="184.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox prefHeight="387.0" prefWidth="239.0" spacing="10.0">
+               <children>
+                  <Label text="HOUSING SERVICE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choiceBox" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" onAction="#houseButtonPushed" text="Get House" />
+                  <Label fx:id="choiceBoxLabel" text="Label" />
+               </children>
+            </VBox>
+            <VBox prefHeight="309.0" prefWidth="192.0" spacing="10.0">
+               <children>
+                  <Label text="REFRESHMENT">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboBox" onAction="#comboBoxWasUpdated" prefWidth="150.0" />
+                  <Label fx:id="comboBoxLabel" text="Label" />
+               </children>
+            </VBox>
+            <VBox prefHeight="300.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="User Types">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="individualRadioButton" mnemonicParsing="false" onAction="#radioButtonChanged" text="individual" />
+                  <RadioButton fx:id="familyRadioButton" mnemonicParsing="false" onAction="#radioButtonChanged" text="family" />
+                  <RadioButton fx:id="teamRadioButton" mnemonicParsing="false" onAction="#radioButtonChanged" text="Team" />
+                  <RadioButton fx:id="tripRadioButton" mnemonicParsing="false" onAction="#radioButtonChanged" text="Trip On Survey" />
+                  <Label fx:id="radioButtonLabel" text="Label" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="257.0" layoutY="44.0" text="Welcome to marong's holidays maker" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Text fill="#f5f3f3" layoutX="468.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For admin use only" underline="true" />
+      <Button layoutX="687.0" layoutY="479.0" mnemonicParsing="false" onAction="#backTodashboard" prefHeight="25.0" prefWidth="99.0" text="Exist" />
+   </children>
+</AnchorPane>
